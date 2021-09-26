@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The longest name one the facebook friend list</title>
+</head>
+<body>
+    <h2>Assignment:03</h2>
+    <script>
+        
+        document.write('The longest name one the facebook friend list');
+
+        var nameList = ['Ayesha hasan', 'Fahmida kabir','Priya sorkar','Marjan bk','Saif Ahmed Abrar', 'Omar Osama Alajami','Rokaiya Tahmin Jannati' ,'Seema Akter','Nusrat Neha'];
+        var largest = 0;
+        var largestArray=[0];
+        var x;
+
+for (var x = 0; x < nameList.length; x++) {
+    if (largest < nameList[x].length ) {
+        largest=nameList[x].length;
+        largestArray = nameList[x];
+    }
+}
+document.write("List of Names : " + nameList + "<br>")
+document.write("Largest Name : " + largestArray + "<br>");
+document.write("Length of the Name : " + largest + "<br>");
+
+
+
+  </script>
+</body>
+</html>
